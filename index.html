@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="japonais" lang="fr">
+    <head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Kana Demo</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/japanese.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+	<header><h1>Jisho.fr</h1>
+	<nav>
+		<a href="">Partie 1</a>
+		<a href="">Partie 2</a>
+		<a href="">Partie 3</a>
+		<a href="">Partie 4</a>
+	</nav>
+	</header>
+        <section>
+            <header>
+                <h2>Kana</h2>
+	</header>
+	<form data-to-kana="1">
+	    <button lang="ja" data-ng-controller="myAppController" type="button" class="btn btn-default custom" data-ng-click="changeKana()">あ</button>
+	    <input  class="form-control kana"  placeholder="Écrire ici" lang="ja" />
+	</form>
+
+        </section>
+        <footer>copyright</footer>
+        <script type="text/javascript" src="js/angular/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-kana2.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+
+    </body>
+</html>
